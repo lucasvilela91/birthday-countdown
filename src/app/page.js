@@ -32,11 +32,6 @@ export default function HomePage() {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundImage: 'url(/photo-to-page.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 0.9,
-          zIndex: -1,
         },
       }}
     >
@@ -54,8 +49,8 @@ export default function HomePage() {
       </Typography>
 
       <Button
-        variant='contained'
         onClick={() => alert('A Pida é a pida!')}
+        href='/birthday'
         sx={{
           backgroundColor: '#690037',
           color: '#fff',
@@ -71,8 +66,8 @@ export default function HomePage() {
       </Button>
 
       <Button
-        variant='contained'
         onClick={() => alert('Botão clicado!')}
+        href='/'
         sx={{
           backgroundColor: '#690037',
           color: '#fff',

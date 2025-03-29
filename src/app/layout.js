@@ -1,8 +1,10 @@
+// app/layout.js
 'use client';
 
 import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import theme from '@/theme/theme'; // Importa o tema
+import { CssBaseline } from '@mui/material';
+import theme from '../theme/theme';
+import Layout from '../components/layout';
 
 export default function RootLayout({ children }) {
   return (
@@ -10,7 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          {children}
+          <Layout>{children}</Layout>
         </ThemeProvider>
       </body>
     </html>
