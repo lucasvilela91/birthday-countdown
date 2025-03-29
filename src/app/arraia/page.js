@@ -1,24 +1,25 @@
 // app/aniversario/page.js
 import React from 'react';
-import { Typography, Button } from '@mui/material'; // Usando Material UI
-import CountdownTimer from '../../components/countdownTimer';
+import { Typography, Button } from '@mui/material';
+import CountdownTimer from '../../components/countdownTimer'; // Certifique-se do caminho correto
+
 const AniversarioPage = () => {
   return (
-    <div style={{ textAlign: 'center', padding: '50px' }}>
+    <div style={{ textAlign: 'center', padding: '20px' }}>
       <Typography
-        variant='h3'
+        variant='h4'
         gutterBottom
         sx={{
-          color: 'white',
+          color: 'black',
           fontWeight: 'bold',
           textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)',
-          marginBottom: '140px', // Aumenta a distância abaixo do título
+          marginBottom: '198px',
         }}
       >
-        Falta pouco para meu 30tão!
+        Falta pouco para viver um típico São João baiano!
       </Typography>
 
-      <CountdownTimer targetDate='2025-06-20T00:00:00' title='Meu dia' />
+      <CountdownTimer targetDate='2025-06-21T16:00:00' title='Arraiá 30tão' />
 
       <Button
         href='/'
@@ -30,7 +31,7 @@ const AniversarioPage = () => {
           minHeight: '50px',
           borderRadius: '8px',
           '&:hover': { backgroundColor: '#8A0050' },
-          marginTop: '260px',
+          marginTop: '265px',
         }}
       >
         Voltar à Página Inicial

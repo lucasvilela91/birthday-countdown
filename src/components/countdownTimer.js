@@ -3,7 +3,8 @@
 import { useEffect, useState } from 'react';
 import { Box, Typography, Paper } from '@mui/material';
 
-const CountdownTimer = ({ targetDate }) => {
+const CountdownTimer = ({ targetDate, title = 'Contagem Regressiva' }) => {
+  // Aqui estamos definindo o valor padrão para o título
   const calculateTimeLeft = () => {
     const difference = new Date(targetDate) - new Date();
     if (difference > 0) {
@@ -32,7 +33,7 @@ const CountdownTimer = ({ targetDate }) => {
       sx={{ padding: 3, textAlign: 'center', maxWidth: 300, margin: 'auto' }}
     >
       <Typography variant='h5' gutterBottom>
-        Contagem Regressiva
+        {title} {/* Aqui mostramos o título que foi passado como prop */}
       </Typography>
       <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }}>
         <Box>
