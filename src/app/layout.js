@@ -1,11 +1,16 @@
-import React from 'react';
+// app/layout.js
 import { CssBaseline } from '@mui/material';
-import './globals.css'; // Verifique se o arquivo global.css está sendo importado corretamente.
+import './globals.css';
 
-const Layout = ({ children }) => {
+export const metadata = {
+  title: 'Contagem Regressiva',
+  description: 'Site de contagem regressiva para eventos',
+};
+
+export default function RootLayout({ children }) {
   return (
-    <html lang='pt-BR'>
-      <body>
+    <html lang='pt-BR' suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <CssBaseline />
         <div className='background'>
           <div className='content'>{children}</div>
@@ -13,6 +18,4 @@ const Layout = ({ children }) => {
       </body>
     </html>
   );
-};
-
-export default Layout;
+}
