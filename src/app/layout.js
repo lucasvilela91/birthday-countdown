@@ -1,6 +1,6 @@
 import React from 'react';
 import { CssBaseline } from '@mui/material';
-import '../app/globals.css'; // Verifique se o arquivo global.css está sendo importado corretamente.
+import './globals.css'; // Verifique se o arquivo global.css está sendo importado corretamente.
 
 const Layout = ({ children }) => {
   return (
