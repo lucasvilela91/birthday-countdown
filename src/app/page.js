@@ -35,28 +35,27 @@ export default function HomePage() {
           backgroundImage: 'url(/photo-to-page.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.4,
+          opacity: 0.9,
           zIndex: -1,
         },
       }}
     >
       <Typography
-        variant='h2'
-        component='h1'
+        variant='h1'
         gutterBottom
         sx={{
-          color: 'black',
+          color: 'white',
           fontWeight: 'bold',
           textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)',
           fontSize: { xs: '2rem', md: '3.25rem' },
         }}
       >
-        Bem-vindo à Contagem Regressiva!
+        Não seria Paula se não tivesse contagem regressiva!
       </Typography>
 
       <Button
         variant='contained'
-        onClick={() => alert('Botão clicado!')}
+        onClick={() => alert('A Pida é a pida!')}
         sx={{
           backgroundColor: '#690037',
           color: '#fff',
@@ -85,7 +84,7 @@ export default function HomePage() {
           marginTop: '20px',
         }}
       >
-        Festa
+        ARRAIÁ
       </Button>
     </Box>
   );
