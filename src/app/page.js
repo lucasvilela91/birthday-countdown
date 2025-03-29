@@ -15,13 +15,34 @@ const Page = () => {
           justifyContent: 'center', // Alinha os itens no centro verticalmente
           height: '100vh', // Garante que o conteúdo fique centralizado na tela
           textAlign: 'center', // Garante que o texto também esteja centralizado
+          position: 'relative', // Necessário para a sobreposição do fundo
+          '&::before': {
+            content: '""',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: 'url(/photo-to-page.jpg)', // Caminho correto da imagem na pasta public
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.4, // Ajuste a opacidade da imagem de fundo
+            zIndex: -1, // Coloca a sobreposição atrás do conteúdo
+          },
         }}
       >
-        <Typography variant='h3' component='h1' gutterBottom>
-          Feliz Aniversário Paula!
-        </Typography>
-        <Typography variant='h6' component='p'>
-          Bem-vindo à contagem regressiva para o grande dia!
+        <Typography
+          variant='h2'
+          component='h1'
+          gutterBottom
+          sx={{
+            color: 'black',
+            fontWeight: 'bold', // Negrito para mais ênfase
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)', // Sombra no texto para melhorar contraste
+            fontSize: '3.25rem', // Aumenta o tamanho da fonte
+          }}
+        >
+          Bem-vindo à Contagem Regressiva!
         </Typography>
 
         {/* Botão abaixo do texto */}
@@ -35,6 +56,7 @@ const Page = () => {
             padding: '10px 30px',
             minWidth: '200px', // Largura mínima
             minHeight: '50px', // Cor do texto
+            borderRadius: '8px',
             '&:hover': {
               backgroundColor: '#8A0050', // Cor de fundo ao passar o mouse (hover)
             },
@@ -54,6 +76,7 @@ const Page = () => {
             padding: '10px 20px',
             minWidth: '200px', // Largura mínima
             minHeight: '50px', // Altura mínima // Cor do texto
+            borderRadius: '8px',
             '&:hover': {
               backgroundColor: '#8A0050', // Cor de fundo ao passar o mouse (hover)
             },
