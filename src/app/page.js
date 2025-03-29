@@ -49,7 +49,6 @@ export default function HomePage() {
       </Typography>
 
       <Button
-        onClick={() => alert('A Pida é a pida!')}
         href='/birthday'
         sx={{
           backgroundColor: '#690037',
