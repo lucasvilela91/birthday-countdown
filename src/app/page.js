@@ -65,8 +65,7 @@ export default function HomePage() {
       </Button>
 
       <Button
-        onClick={() => alert('Botão clicado!')}
-        href='/'
+        href='/arraia'
         sx={{
           backgroundColor: '#690037',
           color: '#fff',
