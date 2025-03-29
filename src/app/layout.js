@@ -1,20 +1,19 @@
 // app/layout.js
-import { CssBaseline } from '@mui/material';
-import './globals.css';
+'use client';
 
-export const metadata = {
-  title: 'Contagem Regressiva',
-  description: 'Site de contagem regressiva para eventos',
-};
+import { ThemeProvider } from '@mui/material/styles';
+import { CssBaseline } from '@mui/material';
+import theme from '../theme/theme';
+import Layout from '../components/layout';
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='pt-BR' suppressHydrationWarning>
-      <body suppressHydrationWarning>
-        <CssBaseline />
-        <div className='background'>
-          <div className='content'>{children}</div>
-        </div>
+    <html lang='pt-BR'>
+      <body>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Layout>{children}</Layout>
+        </ThemeProvider>
       </body>
     </html>
   );

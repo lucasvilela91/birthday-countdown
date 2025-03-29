@@ -4,14 +4,31 @@ import { Typography, Button } from '@mui/material'; // Usando Material UI
 
 const AniversarioPage = () => {
   return (
-    <div style={{ textAlign: 'center', padding: '20px' }}>
-      <Typography variant='h2' gutterBottom>
-        Feliz Aniversário, Paula!
+    <div style={{ textAlign: 'center', padding: '50px' }}>
+      <Typography
+        variant='h3'
+        gutterBottom
+        sx={{
+          color: 'white',
+          fontWeight: 'bold',
+          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)',
+        }}
+      >
+        Falta pouco para seu 30tão!
       </Typography>
-      <Typography variant='h4' paragraph>
-        Parabéns pelos seus 30 anos! Que este ano seja incrível!
-      </Typography>
-      <Button variant='contained' color='secondary' href='/'>
+      <Button
+        href='/'
+        sx={{
+          backgroundColor: '#690037',
+          color: '#fff',
+          padding: '10px 20px',
+          minWidth: '200px',
+          minHeight: '50px',
+          borderRadius: '8px',
+          '&:hover': { backgroundColor: '#8A0050' },
+          marginTop: '20px',
+        }}
+      >
         Voltar à Página Inicial
       </Button>
     </div>
