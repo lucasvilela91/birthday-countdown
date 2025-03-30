@@ -3,6 +3,7 @@
 
 import { Box, Typography, Button } from '@mui/material';
 import { useEffect, useState } from 'react';
+import MusicPlayer from '../components/musicPlayer';
 
 export default function HomePage() {
   const [isClient, setIsClient] = useState(false);
@@ -75,10 +76,13 @@ export default function HomePage() {
           borderRadius: '8px',
           '&:hover': { backgroundColor: '#8A0050' },
           marginTop: '20px',
+          marginBottom: '50px',
         }}
       >
         ARRAIÁ
       </Button>
+
+      <MusicPlayer />
     </Box>
   );
 }

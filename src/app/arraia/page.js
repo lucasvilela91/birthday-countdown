@@ -27,7 +27,7 @@ const AniversarioPage = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          gap: '120px',
+          gap: '60px',
           marginTop: '40px',
         }}
       >
