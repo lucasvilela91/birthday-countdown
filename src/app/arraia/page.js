@@ -2,6 +2,7 @@
 import React from 'react';
 import { Typography, Button } from '@mui/material';
 import CountdownTimer from '../../components/countdownTimer'; // Certifique-se do caminho correto
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const AniversarioPage = () => {
   return (
@@ -21,21 +22,46 @@ const AniversarioPage = () => {
 
       <CountdownTimer targetDate='2025-06-21T16:00:00' title='Arraiá 30tão' />
 
-      <Button
-        href='/'
-        sx={{
-          backgroundColor: '#690037',
-          color: '#fff',
-          padding: '10px 20px',
-          minWidth: '200px',
-          minHeight: '50px',
-          borderRadius: '8px',
-          '&:hover': { backgroundColor: '#8A0050' },
-          marginTop: '265px',
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '120px',
+          marginTop: '40px',
         }}
       >
-        Voltar à Página Inicial
-      </Button>
+        <Button
+          href='https://maps.app.goo.gl/4nvQfYMJFAbfY8KB7'
+          sx={{
+            backgroundColor: '#690037',
+            color: '#fff',
+            padding: '10px 20px',
+            minWidth: '200px',
+            minHeight: '50px',
+            borderRadius: '8px',
+            '&:hover': { backgroundColor: '#8A0050' },
+          }}
+        >
+          <LocationOnIcon sx={{ marginRight: '10px' }} />
+          Localização
+        </Button>
+
+        <Button
+          href='/'
+          sx={{
+            backgroundColor: '#690037',
+            color: '#fff',
+            padding: '10px 20px',
+            minWidth: '200px',
+            minHeight: '50px',
+            borderRadius: '8px',
+            '&:hover': { backgroundColor: '#8A0050' },
+          }}
+        >
+          Voltar à Página Inicial
+        </Button>
+      </div>
     </div>
   );
 };

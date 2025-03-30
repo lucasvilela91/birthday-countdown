@@ -30,7 +30,7 @@ const AniversarioPage = () => {
           minHeight: '50px',
           borderRadius: '8px',
           '&:hover': { backgroundColor: '#8A0050' },
-          marginTop: '260px',
+          marginTop: '210px',
         }}
       >
         Voltar à Página Inicial
