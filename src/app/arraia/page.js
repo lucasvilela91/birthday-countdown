@@ -32,7 +32,7 @@ const AniversarioPage = () => {
         }}
       >
         <Button
-          href='https://maps.app.goo.gl/4nvQfYMJFAbfY8KB7'
+          href='https://maps.app.goo.gl/dmgJeMdyTpvGXsYN8?g_st=aw'
           sx={{
             backgroundColor: '#690037',
             color: '#fff',
