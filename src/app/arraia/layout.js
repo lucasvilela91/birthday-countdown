@@ -16,7 +16,7 @@ export default function AniversarioLayout({ children }) {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundImage: 'url(/arraia-image.jpg)', // Imagem específica para o layout de aniversário
+          backgroundImage: 'url(/arraia-novo.jpg)', // Imagem específica para o layout de aniversário
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           opacity: 1,
